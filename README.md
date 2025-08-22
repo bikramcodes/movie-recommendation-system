@@ -5,17 +5,35 @@ This project is a **Movie Recommendation System** that suggests movies to users 
 ## 📂 Project Structure
 
 ```
-├── model/                      # Folder containing ML models and serialized files
-│   └── similarity.pkl          # Precomputed similarity matrix (large file, excluded from GitHub)
-├── notebooks/
-│   └── data_exploration.IPYNB  # Jupyter notebooks for experimentation
-├── requirements.txt            # Python dependencies
-└── README.md                   # Project documentation
+RECOMMENDATION SYSTEM/
+│
+├── data/                     # Raw dataset
+│   ├── credits.csv
+│   └── movies.csv
+│
+├── model/                    # Saved models (Pickle files)
+│   ├── movie_list.pkl
+│   └── similarity.pkl
+│
+├── notebooks/                # Jupyter notebooks
+│   └── data_exploration.ipynb
+│
+├── README.md                 # Project documentation
+├── requirements.txt          # Python dependencies
+└── .gitignore
 ```
 
 ## 🚀 Features
 - Content-based movie recommendation system.
 - Precomputed similarity matrix for fast recommendations.
+
+## 🛠️ Tech Stack
+- Python
+- Libraries:
+   - Pandas
+   - Numpy
+   - Scikit-learn
+   - Pickle
 
 ## ⚙️ Installation
 
@@ -47,11 +65,20 @@ This project is a **Movie Recommendation System** that suggests movies to users 
 - Built a function to recommend top similar movies given a title.
 
 
-
 ## 🔮 Future Improvements
 - Add collaborative filtering for personalized recommendations.
 - Deploy the app using **Streamlit Cloud** or **Heroku**.
 - Integrate more advanced NLP-based embeddings for better accuracy.
+- Hybrid recommendation (content + collaborative)
+
+## 📊 Example Output
+🎬 Input Movie: Avatar
+✨ Recommended Movies:
+1. John Carter
+2. Guardians of the Galaxy
+3. Star Trek
+4. The Fifth Element
+5. Interstellar
 
 ## 🤝 Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
