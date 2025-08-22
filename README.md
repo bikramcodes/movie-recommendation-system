@@ -5,12 +5,12 @@ This project is a **Movie Recommendation System** that suggests movies to users 
 ## 📂 Project Structure
 
 ```
-├── app.py                # Main Streamlit app script
-├── model/                # Folder containing ML models and serialized files
-│   └── similarity.pkl    # Precomputed similarity matrix (large file, excluded from GitHub)
-├── notebooks/            # Jupyter notebooks for experimentation
-├── requirements.txt      # Python dependencies
-└── README.md             # Project documentation
+├── model/                      # Folder containing ML models and serialized files
+│   └── similarity.pkl          # Precomputed similarity matrix (large file, excluded from GitHub)
+├── notebooks/
+│   └── data_exploration.IPYNB  # Jupyter notebooks for experimentation
+├── requirements.txt            # Python dependencies
+└── README.md                   # Project documentation
 ```
 
 ## 🚀 Features
