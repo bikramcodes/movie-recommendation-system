@@ -50,19 +50,19 @@ RECOMMENDATION SYSTEM/
 
 ## ⚡ Workflow
 1. Data Preprocessing
-- Selected significant columns (title, genres, keywords, overview, cast & crew).
-- Extracted main names from cast & crew details.
-- Removed spaces in multi-word entities to create tokens.
-- Split text into lists of strings.
+   - Selected significant columns (title, genres, keywords, overview, cast & crew).
+   - Extracted main names from cast & crew details.
+   - Removed spaces in multi-word entities to create tokens.
+   - Split text into lists of strings.
 
 2. Feature Engineering
-- Merged relevant columns into a new column context.
-- Created sentences from context for vectorization.
-- Applied Bag of Words (CountVectorizer) to generate vectors.
+   - Merged relevant columns into a new column context.
+   - Created sentences from context for vectorization.
+   - Applied Bag of Words (CountVectorizer) to generate vectors.
 
 3. Model Building
-- Calculated cosine similarity between movies.
-- Built a function to recommend top similar movies given a title.
+   - Calculated cosine similarity between movies.
+   - Built a function to recommend top similar movies given a title.
 
 
 ## 🔮 Future Improvements
