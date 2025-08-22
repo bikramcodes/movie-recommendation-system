@@ -16,7 +16,6 @@ This project is a **Movie Recommendation System** that suggests movies to users 
 ## 🚀 Features
 - Content-based movie recommendation system.
 - Precomputed similarity matrix for fast recommendations.
-- Interactive user interface built with **Streamlit**.
 
 ## ⚙️ Installation
 
@@ -31,18 +30,23 @@ This project is a **Movie Recommendation System** that suggests movies to users 
    pip install -r requirements.txt
    ```
 
-3. Run the app:
-   ```bash
-   streamlit run app.py
-   ```
+## ⚡ Workflow
+1. Data Preprocessing
+- Selected significant columns (title, genres, keywords, overview, cast & crew).
+- Extracted main names from cast & crew details.
+- Removed spaces in multi-word entities to create tokens.
+- Split text into lists of strings.
 
-## 📊 Dataset
-The dataset used for training is the **TMDB 5000 Movie Dataset**, containing metadata such as cast, crew, keywords, and genres.
+2. Feature Engineering
+- Merged relevant columns into a new column context.
+- Created sentences from context for vectorization.
+- Applied Bag of Words (CountVectorizer) to generate vectors.
 
-- You can download the dataset from Kaggle: [TMDB 5000 Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata)
+3. Model Building
+- Calculated cosine similarity between movies.
+- Built a function to recommend top similar movies given a title.
 
-## 🖼️ Screenshots
-_Add demo screenshots of your app UI here_
+
 
 ## 🔮 Future Improvements
 - Add collaborative filtering for personalized recommendations.
