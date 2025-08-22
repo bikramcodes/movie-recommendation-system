@@ -1,6 +1,7 @@
 # 🎬 Movie Recommendation System
+This is a **content-based recommendation system** that suggests similar movies using **Bag of Words (BOW)** and **cosine similarity.**
 
-This project is a **Movie Recommendation System** that suggests movies to users based on similarity scores computed from movie metadata.
+The dataset is self-curated and included in this repository, so you can run the project locally without downloading external data.
 
 ## 📂 Project Structure
 
